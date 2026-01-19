@@ -23,6 +23,7 @@ void list_push_back(List* list, int value){
     ListNode* node = (ListNode*)malloc(sizeof(ListNode));
     if(!node) return;
     node->data = value;
+    node->next = NULL;
 
     if(!list->head){
         list->head = node;
@@ -33,27 +34,6 @@ void list_push_back(List* list, int value){
     while(curr->next) curr = curr->next;
 
     curr->next = node;
-}
-
-void list_pop_back(List* list, int* out){
-    // list is not created or no elements in the list
-    if(!list || !list->head) return;
-
-    // if only one node in the list
-    if(list->head->next == NULL){
-        free(list->head);
-        list->head = NULL;
-        return;
-    }
-
-    // if more than one elements
-    ListNode* curr = list->head;
-    while(curr->next->next) curr = curr->next;
-
-    // write and then delete the last node
-    if(out) *out = curr->next->data;
-    free(curr->next);
-    curr->next = NULL;
 }
 
 int list_pop_front(List* list, int* out){
