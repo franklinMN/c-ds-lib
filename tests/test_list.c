@@ -6,7 +6,7 @@ int main(void){
     assert(list != NULL);
 
     int value;
-    assert(list_pop_front(list, value) == -1);
+    assert(list_pop_front(list, &value) == -1);
 
     list_push_front(list, 10);
     list_push_front(list, 20);
