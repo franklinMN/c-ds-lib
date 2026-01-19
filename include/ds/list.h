@@ -20,4 +20,4 @@ void list_push_back(List* list, int value);
 int list_pop_front(List* list, int* out);
 void list_destroy(List* list);
 
-#endif // DS_LIST_H
+#endif /* DS_LIST_H */

@@ -13,4 +13,4 @@ int stack_pop(Stack* stack, int* out);
 int stack_is_empty(const Stack* stack);
 void stack_destroy(Stack* stack);
 
-# endif // DS_STACK_H
+# endif /* DS_STACK_H */
