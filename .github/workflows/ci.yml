@@ -28,8 +28,4 @@ jobs:
             - name: Run tests
               run: |
                 cd build
-                ctest --output-on-failure || (
-                  ./test_list_generic &&
-                  ./test_stack_generic &&
-                  ./test_queue_generic
-                )
+                ctest --output-on-failure
