@@ -26,3 +26,6 @@ add_test(NAME stack_tests COMMAND test_stack)
 add_executable(test_queue tests/test_queue.c)
 target_link_libraries(test_queue ds)
 add_test(NAME queue_tests COMMAND test_queue)
+
+add_executable(test_list_generic tests/test_list_generic.c)
+target_link_libraries(test_list generic ds)
