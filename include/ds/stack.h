@@ -7,10 +7,13 @@ typedef struct Stack {
     List* list;
 }Stack;
 
-Stack* stack_create(void);
-void stack_push(Stack* stack, int value);
-int stack_pop(Stack* stack, int* out);
-int stack_is_empty(const Stack* stack);
+/* creation / destruction */
+Stack* stack_create(ds_free_fn free_fn);
 void stack_destroy(Stack* stack);
+
+/* operations */
+int stack_push(Stack* stack, void* data);
+int stack_pop(Stack* stack, void** out);
+int stack_is_empty(const Stack* stack);
 
 # endif /* DS_STACK_H */
