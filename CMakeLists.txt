@@ -32,3 +32,6 @@ target_link_libraries(test_list_generic ds)
 
 add_executable(test_stack_generic tests/test_stack_generic.c)
 target_link_libraries(test_stack_generic ds)
+
+add_executable(test_queue_generic tests/test_queue_generic.c)
+target_link_libraries(test_queue_generic ds)
