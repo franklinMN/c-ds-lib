@@ -37,3 +37,7 @@ Notes
 - Tests are silent by design.
 - If all asserts pass, no output is produced.
 - A failing assert will abort the program.
+
+## Roadmap
+- v1.0.0: int-only list, stack, queue
+- v2.0.0: fully generic (void*) data structures
