@@ -24,7 +24,7 @@ CTest-based testing, and CI using GitHub Actions.
 ---
 
 ## Repository Structure
-
+```bash
 .
 ├── include/
 │   └── ds/
@@ -44,7 +44,7 @@ CTest-based testing, and CI using GitHub Actions.
 │       └── ci.yml
 ├── CMakeLists.txt
 └── README.md
-
+```
 ---
 
 ## Versions & Branches
